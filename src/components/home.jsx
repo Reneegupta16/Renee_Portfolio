@@ -158,7 +158,7 @@ export function Home() {
   
           <div className='bg-[#0d2438] text-white'>
             <div className='grid grid-cols-3 gap-1 justify-items-center'>
-              <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Portfolio'} description={'Self Website'} />
+              <Projects image={'/dist/landingpage.png'} title={'Portfolio'} description={'Self Website'} />
               <Projects image={'/dental.png'} title={'Responsive Dental Website'} description={'RG Denatl World'} />
               <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
             </div>
