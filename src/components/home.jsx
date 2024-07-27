@@ -87,7 +87,7 @@ export function Home() {
             </div>
 
   
-            <img src='/landingimage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
+            <img src='dist/landingimage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
             <div className='h-8'></div>
           </div>
 
@@ -97,11 +97,11 @@ export function Home() {
             <div></div>
             <div className='relative w-16 h-20 group'>
               <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FaReact alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
+              <FaJava alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
 ' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Java & Spring
+                Java & SpringBoot
               </div>
             </div>
 
@@ -117,7 +117,7 @@ export function Home() {
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <SiTailwindcss alt="" className='
+              <SiWebDevelopment alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
@@ -158,7 +158,8 @@ export function Home() {
   
           <div className='bg-[#0d2438] text-white'>
             <div className='grid grid-cols-3 gap-1 justify-items-center'>
-              <Projects image={'https://reneegupta16.github.io/RG-Dental-World/'} title={'Dental Website'} description={'RG Dental World - Responsive Website!'} />
+              <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Dental Website'} description={'RG Dental World - Responsive Website!'} />
+              <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
               <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
               
             </div>
