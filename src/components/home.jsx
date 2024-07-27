@@ -1,4 +1,4 @@
-import Pdf from './assets/RESUME--Aayushi Jain.pdf';
+import Pdf from '/ReneeGupta_Resume.pdf';
 import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 import { FaReact } from "react-icons/fa";
@@ -62,12 +62,12 @@ export function Home() {
   transition={{ duration: 1 }}
 >
               <h1 className='text-5xl font-bold text-left pb-4'>Hi, I am <span className='text-[#a8a4f4]
-'>Aayushi</span></h1>
+'>Renee.</span></h1>
               </motion.div>
 
            
               <h1 className='text-3xl font-bold text-left pb-8 pt-2'>
-                <AnimatedText text="Software Developer and Designer"/>
+                <AnimatedText text="Software and Full Stack Developer."/>
               </h1>
               
               
