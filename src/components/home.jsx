@@ -117,7 +117,7 @@ export function Home() {
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <SiWebDevelopment alt="" className='
+              <FaJira alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
@@ -137,7 +137,7 @@ export function Home() {
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FiFigma alt="" className='
+              <FaPlaneArrival alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
