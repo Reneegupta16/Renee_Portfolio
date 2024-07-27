@@ -1,7 +1,7 @@
 import Pdf from '/ReneeGupta_Resume.pdf';
 import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
-import { FaReact } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
 import { SiTailwindcss} from "react-icons/si";
 import { FaPython } from "react-icons/fa";
@@ -62,7 +62,7 @@ export function Home() {
   transition={{ duration: 1 }}
 >
               <h1 className='text-5xl font-bold text-left pb-4'>Hi, I am <span className='text-[#a8a4f4]
-'>Renee.</span></h1>
+'>Renée.</span></h1>
               </motion.div>
 
            
@@ -82,7 +82,7 @@ export function Home() {
  hover:text-white'
                 onClick={() => window.open(Pdf, '_blank')}
               >
-                Download CV
+                Download Résume
               </button>
             </div>
 
@@ -97,7 +97,7 @@ export function Home() {
             <div></div>
             <div className='relative w-16 h-20 group'>
               <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FaReact alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
+              <FaJava alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
 ' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
