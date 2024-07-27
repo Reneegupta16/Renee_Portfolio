@@ -101,7 +101,7 @@ export function Home() {
 ' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Java 8 & Spring Boot
+                Java & Spring Boot
               </div>
             </div>
 
