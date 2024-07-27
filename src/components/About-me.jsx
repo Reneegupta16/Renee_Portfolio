@@ -1,7 +1,7 @@
 export function About() {
   return (
     <div className="flex flex-col items-center p-8">
-      <img className="h-48 pl-28 pr-10 rounded" alt="Profile" src="/profile.jpeg" />
+      <img className="h-60 pl-45 pr-10 rounded" alt="Profile" src="/profile.jpeg" />
       <div className="text-gray-200 text-left max-w-3xl mt-4">
         <p>
           Hello! I'm Renée Gupta, a pre-final year B.Tech student at Delhi Technological University majoring in Electronics Engineering with Minors in Computer Science Engineering. I have a strong foundation in Java programming and Data Structures and Algorithms (DSA). Currently, I am enhancing my skills in Spring Boot to build robust and scalable backend applications and developing and maintaining scalable RESTful APIs. With a strong analytical mindset, I excel at solving complex problems and creating efficient software solutions.
