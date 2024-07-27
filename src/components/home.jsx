@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 import { FaJava } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
-import { SiTailwindcss} from "react-icons/si";
+import { FaCss3Alt} from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
-import { FiFigma } from "react-icons/fi";
+import { FaRobot } from "react-icons/fa";
 
 
 
@@ -101,7 +101,7 @@ export function Home() {
 ' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                React
+                Java 8 & Spring Boot
               </div>
             </div>
 
@@ -111,17 +111,17 @@ export function Home() {
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Data Structures
+                Data Structures & Algorithms
               </div>
             </div>
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <SiTailwindcss alt="" className='
+              <FaCss3Alt alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                TailwindCSS
+                Web Development [HTML, CSS, JS]
               </div>
             </div>
 
@@ -131,17 +131,17 @@ export function Home() {
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Python
+                Python & Machine Learning
               </div>
             </div>
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FiFigma alt="" className='
+              <FaRobot alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                UI/UX Design
+                Particle Physics & AI
               </div>
               <div></div>
             </div>
