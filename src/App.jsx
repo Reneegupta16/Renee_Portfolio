@@ -6,7 +6,7 @@ import { About } from './components/About-me';
 import { Contactpage } from './components/contact';
 import { Project } from './components/projects';
 import {Home} from './components/home'
-import A from '/A.png';
+import A from '/renee.png';
 import classNames from 'classnames';
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
