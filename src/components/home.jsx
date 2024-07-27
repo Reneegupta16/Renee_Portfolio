@@ -1,4 +1,4 @@
-import Pdf from '/ReneeGupta_Resume.pdf';
+import Pdf from './assets/RESUME--Aayushi Jain.pdf';
 import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 import { FaReact } from "react-icons/fa";
@@ -61,13 +61,13 @@ export function Home() {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
 >
-              <h1 className='text-5xl font-bold text-left pb-4'>Hi there, I am <span className='text-[#a8a4f4]
-'>Renée</span></h1>
+              <h1 className='text-5xl font-bold text-left pb-4'>Hi, I am <span className='text-[#a8a4f4]
+'>Aayushi</span></h1>
               </motion.div>
 
            
               <h1 className='text-3xl font-bold text-left pb-8 pt-2'>
-                <AnimatedText text="Software and Full Stack Developer"/>
+                <AnimatedText text="Software Developer and Designer"/>
               </h1>
               
               
@@ -82,12 +82,12 @@ export function Home() {
  hover:text-white'
                 onClick={() => window.open(Pdf, '_blank')}
               >
-                Download Resume
+                Download CV
               </button>
             </div>
 
   
-            <img src='dist/landingimage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
+            <img src='/landingimage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
             <div className='h-8'></div>
           </div>
 
@@ -97,11 +97,11 @@ export function Home() {
             <div></div>
             <div className='relative w-16 h-20 group'>
               <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FiFigma alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
+              <FaReact alt="" className='absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0 
 ' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Java & SpringBoot
+                React
               </div>
             </div>
 
@@ -111,17 +111,17 @@ export function Home() {
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Data Structures & Algorithms
+                Data Structures
               </div>
             </div>
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FaJira alt="" className='
+              <SiTailwindcss alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                Web Development [JS, HTML, CSS]
+                TailwindCSS
               </div>
             </div>
 
@@ -137,11 +137,11 @@ export function Home() {
 
             <div className='relative w-16 h-20 group'>
             <motion.image initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-              <FaPlaneArrival alt="" className='
+              <FiFigma alt="" className='
  absolute inset-0 size-5 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0' /> 
               </motion.image>
               <div className='absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
-                UI / UX Design
+                UI/UX Design
               </div>
               <div></div>
             </div>
@@ -158,10 +158,9 @@ export function Home() {
   
           <div className='bg-[#0d2438] text-white'>
             <div className='grid grid-cols-3 gap-1 justify-items-center'>
-              <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Dental Website'} description={'RG Dental World - Responsive Website!'} />
               <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
               <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
-              
+              <Projects image={'https://react-tailwindcss-portfolio.netlify.app/static/media/developer-dark.3f07bd13.svg'} title={'Google Health Platform'} description={'Web Application'} />
             </div>
   
             <div className='flex justify-center items-center pt-32'>
