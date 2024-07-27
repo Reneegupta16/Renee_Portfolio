@@ -45,7 +45,7 @@ function App() {
  opacity-35  '></hr>
 
 <div className='pt-16 text-3xl text-white'>
-  Follow Me
+  Connect With Me On Socials!.
 </div>
 
 <div className="flex justify-center items-center gap-7 pt-12 h-8 text-white">
@@ -72,7 +72,7 @@ function App() {
     </div>
 
 <div className='pt-32 text-white'>
-2024React & Tailwind CSS Portfolio.
+2024 Renée Gupta Portfolio.
 </div>
 
 </BrowserRouter>
@@ -140,7 +140,7 @@ function Appbar() {
             {/* <img src={A} alt="A"  className='h-8 rounded'/> */}
             <motion.div whileHover={{ scale: 1.3 }}>
               <div className="  hover:cursor-pointer pl-3 text-3xl text-[#a8a4f4]
- font-semibold" onClick={() => navigate("/")}>Aayushi.</div></motion.div>
+ font-semibold" onClick={() => navigate("/")}>Renée.</div></motion.div>
             </div>
             <div className="hidden md:block text-2xl">
               <div className="ml-10 flex items-baseline space-x-4 text-2xl ">
