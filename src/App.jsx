@@ -1,11 +1,10 @@
-
-import './App.css'
+import './App.css';
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, useNavigate, useLocation} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { About } from './components/About-me';
 import { Contactpage } from './components/contact';
 import { Project } from './components/projects';
-import {Home} from './components/home'
+import { Home } from './components/home';
 import A from '/renee.png';
 import classNames from 'classnames';
 import { FaLinkedin } from "react-icons/fa";
@@ -13,94 +12,69 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
-import { motion } from "framer-motion"
-
-
-
-
-
+import { motion } from "framer-motion";
 
 function App() {
-
   return (
     <>
-    <div>
-   
+      <div>
+        <BrowserRouter>
+          <Appbar />
 
-      <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/projects" element={<Project />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contactpage />} />
+          </Routes>
 
-      <Appbar />
+          <div className="mb-20"></div>
 
-      <Routes>
-           <Route index element={<Home />} />
-          <Route path="/projects" element={<Project />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contactpage />} />
-        </Routes>
+          <hr className='pt-10 border-t border-[#a8a4f4] opacity-35'></hr>
 
-        <div className="mb-20"></div>
+          <div className='pt-16 text-3xl text-white'>
+            Connect With Me On Socials!.
+          </div>
 
+          <div className="flex justify-center items-center gap-7 pt-12 h-8 text-white">
+            <a href="https://www.linkedin.com/in/renée-gupta-b8a7661b6/" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+              <FaLinkedin size='3rem' className="icon hover:bg-[#a8a4f4]" />
+            </a>
+            <a href="https://www.instagram.com/reneegupta16" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+              <FaInstagramSquare size='3rem' className="icon hover:bg-[#a8a4f4]" />
+            </a>
+            <a href="https://twitter.com/Reneegupta16" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+              <FaTwitterSquare size='3rem' className="icon hover:bg-[#a8a4f4]" />
+            </a>
+            <a href="https://leetcode.com/Reneegupta16" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+              <SiLeetcode size='3rem' className="icon hover:bg-[#a8a4f4]" />
+            </a>
+            <a href="https://github.com/Reneegupta16" target="_blank" rel="noopener noreferrer" className="icon-wrapper">
+              <FaGithubSquare size='3rem' className="icon hover:bg-[#a8a4f4]" />
+            </a>
+          </div>
 
-<hr className = 'pt-10 border-t border-[#a8a4f4]
- opacity-35  '></hr>
-
-<div className='pt-16 text-3xl text-white'>
-  Connect With Me On Socials!.
-</div>
-
-<div className="flex justify-center items-center gap-7 pt-12 h-8 text-white">
-      <div className="icon-wrapper">
-        <FaLinkedin size='3rem' className="icon hover:bg-[#a8a4f4]
-" />
+          <div className='pt-32 text-white'>
+            2024 Renée Gupta Portfolio.
+          </div>
+        </BrowserRouter>
       </div>
-      <div className="icon-wrapper">
-        <FaInstagramSquare size='3rem' className="icon hover:bg-[#a8a4f4]
-" />
-      </div>
-      <div className="icon-wrapper">
-        <FaTwitterSquare size='3rem' className="icon hover:bg-[#a8a4f4]
-" />
-      </div>
-      <div className="icon-wrapper">
-        <SiLeetcode size='3rem' className="icon hover:bg-[#a8a4f4]
-" />
-      </div>
-      <div className="icon-wrapper">
-        <FaGithubSquare size='3rem' className="icon hover:bg-[#a8a4f4]
-" />
-      </div>
-    </div>
-
-<div className='pt-32 text-white'>
-2024 Renée Gupta Portfolio.
-</div>
-
-</BrowserRouter>
-
-</div>
-      </>
-    
-   
+    </>
   );
 }
 
-
-
 function Appbar() {
   const navigate = useNavigate();
-  const  location = useLocation();
+  const location = useLocation();
   const [activeRoute, setActiveRoute] = useState('');
-
 
   useEffect(() => {
     setActiveRoute(location.pathname);
-
-    }
-  , [location]);
+  }, [location]);
 
   const buttonClasses1 = classNames(
-    'text-white', // Default text color
-    {'underline':  '/projects'=== activeRoute}, // Background color based on route
+    'text-white',
+    { 'underline': '/projects' === activeRoute },
     'hover:text-white',
     'px-3',
     'py-2',
@@ -110,8 +84,8 @@ function Appbar() {
   );
 
   const buttonClasses2 = classNames(
-    'text-white', // Default text color
-    {'underline':  '/about'=== activeRoute}, // Background color based on route
+    'text-white',
+    { 'underline': '/about' === activeRoute },
     'hover:text-white',
     'px-3',
     'py-2',
@@ -121,8 +95,8 @@ function Appbar() {
   );
 
   const buttonClasses3 = classNames(
-    'text-white', // Default text color
-    {'underline':  '/contact'=== activeRoute}, // Background color based on route
+    'text-white',
+    { 'underline': '/contact' === activeRoute },
     'hover:text-white',
     'px-3',
     'py-2',
@@ -136,40 +110,34 @@ function Appbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex justify-center items-center text-white ">
-            {/* <img src={A} alt="A"  className='h-8 rounded'/> */}
-            <motion.div whileHover={{ scale: 1.3 }}>
-              <div className="  hover:cursor-pointer pl-3 text-3xl text-[#a8a4f4]
- font-semibold" onClick={() => navigate("/")}>Renée.</div></motion.div>
+            <div className="flex justify-center items-center text-white">
+              {/* <img src={A} alt="A"  className='h-8 rounded'/> */}
+              <motion.div whileHover={{ scale: 1.3 }}>
+                <div className="hover:cursor-pointer pl-3 text-3xl text-[#a8a4f4] font-semibold" onClick={() => navigate("/")}>Renée.</div>
+              </motion.div>
             </div>
             <div className="hidden md:block text-2xl">
-              <div className="ml-10 flex items-baseline space-x-4 text-2xl ">
-              <motion.button whileHover={{ scale: 1.3 }}>
-
-                <button onClick={() => navigate("/projects")} className={buttonClasses1}>Projects</button> </motion.button>
+              <div className="ml-10 flex items-baseline space-x-4 text-2xl">
                 <motion.button whileHover={{ scale: 1.3 }}>
-
-                <button onClick={() => navigate("/about")} className={buttonClasses2}>About me</button> </motion.button>
-
+                  <button onClick={() => navigate("/projects")} className={buttonClasses1}>Projects</button>
+                </motion.button>
                 <motion.button whileHover={{ scale: 1.3 }}>
-
-                <button onClick={() => navigate("/contact")} className={buttonClasses3}>Contact me</button>
+                  <button onClick={() => navigate("/about")} className={buttonClasses2}>About me</button>
+                </motion.button>
+                <motion.button whileHover={{ scale: 1.3 }}>
+                  <button onClick={() => navigate("/contact")} className={buttonClasses3}>Contact me</button>
                 </motion.button>
               </div>
             </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
-              <button 
-                onClick={() =>navigate("/contact")} 
-                className="hover:underline text-[#a8a4f4]
- bg-transparent border border-solid border-[#a8a4f4]
- rounded py-2 px-4 hover:bg-[#a8a4f4] 
- hover:text-white text-sm font-medium"
+              <button
+                onClick={() => navigate("/contact")}
+                className="hover:underline text-[#a8a4f4] bg-transparent border border-solid border-[#a8a4f4] rounded py-2 px-4 hover:bg-[#a8a4f4] hover:text-white text-sm font-medium"
               >
                 Hire Me
               </button>
-             
             </div>
           </div>
         </div>
@@ -183,8 +151,7 @@ function Appbar() {
         </div>
       </div>
     </nav>
-
-    
   );
 }
-export default App
+
+export default App;
