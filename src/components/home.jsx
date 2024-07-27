@@ -87,7 +87,7 @@ export function Home() {
             </div>
 
   
-            <img src='dist/landingpage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
+            <img src='/landingpage.png' alt="'Profile picture'" className='h-[50vh] rounded-md pr-24 hidden md:flex' />
             <div className='h-8'></div>
           </div>
 
